@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alphabet Clash Pro</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- daisy ui and tailwind css link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <main></main>
+  <body class="font-poppins">
+    <main
+      class="min-h-screen bg-[#1E1E1E] bg-[url('images/background.png')] bg-no-repeat bg-center flex justify-center items-center"
+    >
+      <!-- home section -->
+      <section class="text-center space-y-6 hidden">
+        <h1 class="text-8xl font-bold text-white font-anton tracking-widest">
+          ALPHABET CLASH
+        </h1>
+        <p class="text-white">
+          Unleash Your Keyboard Kung Fu : Press “Enter” to Plays
+        </p>
+        <button class="btn">Play Now</button>
+      </section>
+
+      <!-- game section -->
+
+      <section class="">
+        <!-- art board -->
+        <div
+          class="artboard artboard-horizontal phone-4 bg-[#FFFFFFB3] border-[#010313CC] rounded-2xl border-[10px] mb-5"
+        >
+          <p
+            class="bg-[#010313CC] text-white w-80 p-1 rounded-b-lg text-center mx-auto"
+          >
+            Don't watch keyboard while playing...
+          </p>
+          <h1 class="text-8xl text-center mt-20 font-semibold">Y</h1>
+        </div>
+        <!-- keyboard -->
+        <div class="flex justify-center gap-1 my-1 w-full">
+          <kbd class="kbd">q</kbd>
+          <kbd class="kbd">w</kbd>
+          <kbd class="kbd">e</kbd>
+          <kbd class="kbd">r</kbd>
+          <kbd class="kbd">t</kbd>
+          <kbd class="kbd">y</kbd>
+          <kbd class="kbd">u</kbd>
+          <kbd class="kbd">i</kbd>
+          <kbd class="kbd">o</kbd>
+          <kbd class="kbd">p</kbd>
+        </div>
+        <div class="flex justify-center gap-1 my-1 w-full">
+          <kbd class="kbd">a</kbd>
+          <kbd class="kbd">s</kbd>
+          <kbd class="kbd">d</kbd>
+          <kbd class="kbd">f</kbd>
+          <kbd class="kbd">g</kbd>
+          <kbd class="kbd">h</kbd>
+          <kbd class="kbd">j</kbd>
+          <kbd class="kbd">k</kbd>
+          <kbd class="kbd">l</kbd>
+        </div>
+        <div class="flex justify-center gap-1 my-1 w-full">
+          <kbd class="kbd">z</kbd>
+          <kbd class="kbd">x</kbd>
+          <kbd class="kbd">c</kbd>
+          <kbd class="kbd">v</kbd>
+          <kbd class="kbd">b</kbd>
+          <kbd class="kbd">n</kbd>
+          <kbd class="kbd">m</kbd>
+          <kbd class="kbd">/</kbd>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
